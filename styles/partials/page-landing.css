@@ -80,9 +80,11 @@
     align-items: center;
     justify-content: center;
 }
+
 .total-connections img{
     margin-left: 0.8rem;
 }
+
 @media(max-width:699px){
     :root{
         font-size: 40%;
