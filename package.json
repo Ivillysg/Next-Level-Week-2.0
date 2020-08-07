@@ -1,0 +1,19 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": "https://github.com/Ivillysg/proffy-discovery.git",
+  "keywords": [],
+  "author": "ivillysg <ivillysgomes@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
