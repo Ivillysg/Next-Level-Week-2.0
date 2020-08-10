@@ -35,7 +35,7 @@ async function pageStudy(req, res) {
       console.log(error);
     }
   }
-  
+
   //Se nao, filtrar
   const timeToMinutes = convertHoursToMinutes(filters.time);
 
@@ -103,14 +103,19 @@ async function saveClasses(req, res) {
     const db = await Database;
     await createProffy(db, { proffyValue, classValue, classScheduleValues });
 
-    let queryString = "?subject=" + subject;
-    queryString += "&weekday=" + req.body.weekday[0];
-    queryString += "&time=" + req.body.time_from[0];
-
-    return res.redirect("/study" + queryString);
+    return res.redirect("/result");
   } catch (error) {
     console.log(error);
   }
 }
+function pageResult(req, res) {
+  return res.render("result.html");
+}
 
-module.exports = { pageLanding, pageStudy, pageGiveClasses, saveClasses };
+module.exports = {
+  pageLanding,
+  pageStudy,
+  pageGiveClasses,
+  saveClasses,
+  pageResult,
+};

@@ -20,12 +20,14 @@ const {
   pageStudy,
   pageGiveClasses,
   saveClasses,
+  pageResult,
 } = require("./page");
 
 //Routas
 server.get("/", pageLanding);
 server.get("/study", pageStudy);
 server.get("/give-classes", pageGiveClasses);
+server.get("/result", pageResult);
 server.post("/save-classes", saveClasses);
 
 //Porta
