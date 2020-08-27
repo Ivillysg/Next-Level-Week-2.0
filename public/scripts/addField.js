@@ -15,11 +15,10 @@ function cloneField() {
   //Pegar os campos. Que campos?
   const fields = newFieldContainer.querySelectorAll("input");
 
-  //Para cada campo, limpar.
-  fields.forEach(function (field) {
+  console.log(newFieldContainer);
+  fields.forEach((field) => {
     field.value = "";
   });
-
   //Colocar na pagina. Onde?
   document.querySelector("#schedule-items").appendChild(newFieldContainer);
 }
