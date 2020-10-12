@@ -45,10 +45,10 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/ivillysg/proffy-discovery
+git clone https://github.com/ivillysg/Next-Level-Week-2.0.git
 
 # Entrar no diretório
-cd proffy-discovery
+cd Next-Level-Week-2.0
 
 # Baixar as dependências
 npm i
